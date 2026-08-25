@@ -1,0 +1,105 @@
+/* =================================
+   THEME TOGGLE BUTTON
+================================= */
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    margin-left: 10px;
+
+    border: 1px solid #d4a373;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #333;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+/* =================================
+   DARK MODE
+================================= */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* Navbar */
+
+body.dark-mode .navbar {
+    background-color: #181818;
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+
+/* Sections */
+
+body.dark-mode section {
+    background-color: #121212;
+}
+
+
+/* Headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #ffffff;
+}
+
+
+/* Paragraphs */
+
+body.dark-mode p {
+    color: #d0d0d0;
+}
+
+
+/* Cards */
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .internship-card,
+body.dark-mode .profile-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Footer */
+
+body.dark-mode .footer {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+
+/* Dark mode button */
+
+body.dark-mode .theme-toggle {
+    color: #ffffff;
+    border-color: #ffffff;
+}

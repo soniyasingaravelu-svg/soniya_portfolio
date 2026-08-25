@@ -1,0 +1,20 @@
+.profile-section {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #090821;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: none;
+}

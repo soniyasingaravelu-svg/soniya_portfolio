@@ -1,0 +1,454 @@
+/* =====================================
+   HOME SECTION
+===================================== */
+
+.home-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 30px 80px;
+
+    background: #0a0f1e;
+    color: #ffffff;
+}
+
+
+/* =====================================
+   HOME CONTAINER
+===================================== */
+
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* =====================================
+   HOME CONTENT
+===================================== */
+
+.home-content {
+    max-width: 700px;
+}
+
+
+/* Small Heading */
+
+.hello {
+    margin-bottom: 18px;
+
+    color: #6c63ff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+/* Name */
+
+.home-content h1 {
+    margin: 0 0 20px;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.home-content h1 span {
+    color: #6c63ff;
+}
+
+
+/* Job Title */
+
+.home-content h2 {
+    margin: 0 0 25px;
+
+    color: #d5d8e2;
+
+    font-size: 32px;
+
+    font-weight: 600;
+}
+
+
+/* Description */
+
+.home-description {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #9da3b4;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Common Button */
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 24px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================
+   VIEW PROJECTS BUTTON
+===================================== */
+
+.primary-btn {
+    background: #6c63ff;
+
+    border: 1px solid #6c63ff;
+
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #574fd6;
+
+    border-color: #574fd6;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.25);
+}
+
+
+/* =====================================
+   RESUME BUTTON
+===================================== */
+
+.secondary-btn {
+    background: transparent;
+
+    border: 1px solid #6c63ff;
+
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background: #6c63ff;
+
+    border-color: #6c63ff;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.25);
+}
+
+
+/* Resume Icon */
+
+.secondary-btn i {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+.home-social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.home-social a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(108, 99, 255, 0.5);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #c4c7d4;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.home-social a:hover {
+    background: #6c63ff;
+
+    border-color: #6c63ff;
+
+    color: #ffffff;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.25);
+}
+
+
+/* =====================================
+   DEVELOPER DECORATION
+===================================== */
+
+.home-decoration {
+    width: 330px;
+    height: 330px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.code-box {
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    border: 1px solid rgba(108, 99, 255, 0.45);
+
+    border-radius: 20px;
+
+    background: rgba(108, 99, 255, 0.03);
+
+    color: #6c63ff;
+
+    font-size: 70px;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 40px rgba(108, 99, 255, 0.08),
+        inset 0 0 30px rgba(108, 99, 255, 0.03);
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+
+/* =====================================
+   FLOATING ANIMATION
+===================================== */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .home-container {
+        gap: 30px;
+    }
+
+    .home-decoration {
+        width: 250px;
+        height: 250px;
+    }
+
+    .code-box {
+        width: 190px;
+        height: 190px;
+
+        font-size: 55px;
+    }
+
+    .home-content h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .home-section {
+        min-height: 100vh;
+
+        padding: 120px 20px 70px;
+
+        text-align: center;
+    }
+
+    .home-container {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 40px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: clamp(48px, 15vw, 70px);
+    }
+
+    .home-content h2 {
+        font-size: 24px;
+    }
+
+    .home-description {
+        margin: 0 auto;
+
+        font-size: 15px;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+    .home-social {
+        justify-content: center;
+    }
+
+    .home-decoration {
+        display: none;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .home-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hello {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .home-content h2 {
+        font-size: 21px;
+    }
+
+    .home-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .home-social a {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+}
