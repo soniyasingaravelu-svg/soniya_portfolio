@@ -13,8 +13,8 @@ document.getElementById("about").innerHTML = `
             <div class="about-text">
 
                 <p>
-                    "Frontend Developer specialized in crafting fast, accessible, and user-centric interfaces. 
-                    Focused on intuitive navigation, modern CSS layouts, and smooth user interactions."
+                    Frontend Developer specialized in crafting fast, accessible, and user-centric interfaces. 
+                    Focused on intuitive navigation, modern CSS layouts, and smooth user interactions.
                 </p>
 
                 <p>
